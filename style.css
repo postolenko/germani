@@ -182,7 +182,8 @@ section {
 /*-------------------------------------------*/
 
 h2 {
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #FFEB00;
     font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-size: 23px;
     line-height: 30px;
@@ -200,10 +201,14 @@ a {
 }
 
 .screen {
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .8);
     width: 100%;
     padding: 4% 0;
 }
+
+/*.screen:nth-child(2n+1) {
+    background: rgba(255, 255, 255, .8);
+}*/
 
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
@@ -278,6 +283,7 @@ select::-ms-expand {
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
 
+/* ----- Screen 1 ------ */
 
 .screen-1 h2 {
     color: #FFEB00;
@@ -330,3 +336,49 @@ select::-ms-expand {
     font-weight: 400;
 }
 
+
+/* ----- Screen 2 ------ */
+
+.screen-2 {
+
+}
+
+.screen-2 .paragraph {
+    color: #ffffff;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 13px 0;
+}
+
+.list {
+    color: #ffffff;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.list-item {
+    padding: 10px 0;
+}
+
+.inner-list {
+    color: #F71313;
+}
+
+.inner-list-item {
+
+}
+
+/*-------------------------------------------*/
+/* ----- FOOTER ------ */
+/*-------------------------------------------*/
+
+.footer-bg {
+    background: rgba(0, 0, 0, .9);
+    position: relative;
+    z-index: 2;
+}
