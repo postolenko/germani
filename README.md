@@ -1,1 +1,1 @@
-# http://postolenko.github.io/manifred
+# http://postolenko.github.io/germani
