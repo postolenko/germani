@@ -56,24 +56,24 @@
 
 @font-face {
     font-family: "PT Sans";
-    src: url("PTSans-Regular.eot");
-    src: url("PTSans-Regular.eot?#iefix") format("embedded-opentype"),
-        url("PTSans-Regular.woff2") format("woff2"),
-        url("PTSans-Regular.woff") format("woff"),
-        url("PTSans-Regular.ttf") format("truetype"),
-        url("PTSans-Regular.svg#PTSans-Regular") format("svg");
+    src: url("fonts/PTSans-Regular.eot");
+    src: url("fonts/PTSans-Regular.eot?#iefix") format("embedded-opentype"),
+        url("fonts/PTSans-Regular.woff2") format("woff2"),
+        url("fonts/PTSans-Regular.woff") format("woff"),
+        url("fonts/PTSans-Regular.ttf") format("truetype"),
+        url("fonts/PTSans-Regular.svg#PTSans-Regular") format("svg");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "PT Sans";
-    src: url("PTSans-Bold.eot");
-    src: url("PTSans-Bold.eot?#iefix") format("embedded-opentype"),
-        url("PTSans-Bold.woff2") format("woff2"),
-        url("PTSans-Bold.woff") format("woff"),
-        url("PTSans-Bold.ttf") format("truetype"),
-        url("PTSans-Bold.svg#PTSans-Bold") format("svg");
+    src: url("fonts/PTSans-Bold.eot");
+    src: url("fonts/PTSans-Bold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/PTSans-Bold.woff2") format("woff2"),
+        url("fonts/PTSans-Bold.woff") format("woff"),
+        url("fonts/PTSans-Bold.ttf") format("truetype"),
+        url("fonts/PTSans-Bold.svg#PTSans-Bold") format("svg");
     font-weight: 700;
     font-style: normal;
 }
