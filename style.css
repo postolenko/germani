@@ -128,8 +128,8 @@ body {
 }
 
 section {
-    padding: 30px 0;
-    min-height: 100vh;
+    /*padding: 30px 0;*/
+    /*min-height: 100vh;*/
     position: relative;
     z-index: 2;
 }
@@ -185,11 +185,26 @@ h2 {
     /*color: #ffffff;*/
     color: #FFEB00;
     font-family: "Open Sans", Verdana, Arial, sans-serif;
-    font-size: 23px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 34px;
     font-weight: 300;
     text-align: center;
     padding: 20px 0;
+}
+
+.screen {
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    padding: 4% 0;
+}
+
+.screen h2:after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 2px;
+    margin: 20px auto;
+    background: rgba(255, 0, 0, 1);
 }
 
 li {
@@ -198,12 +213,6 @@ li {
 
 a {
     text-decoration: none;
-}
-
-.screen {
-    background: rgba(0, 0, 0, .8);
-    width: 100%;
-    padding: 4% 0;
 }
 
 /*.screen:nth-child(2n+1) {
@@ -226,6 +235,58 @@ a {
 
 select::-ms-expand {
   display: none;
+}
+
+.red-txt {
+    color: #F71313;
+}
+
+.paragraph {
+    color: #ffffff;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.article {
+    font-size: 0;
+    line-height: 0;
+    padding: 50px 0;
+}
+
+.article .right-col {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 0 0 2%;
+}
+
+.article-h {
+    color: #ffffff;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 300;
+}
+
+.article .left-col {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 2% 0 0;
+}
+
+.list-item-star:before {
+    display: inline-block;
+    vertical-align: top;
+    content: "*";
+    color: #FFEB00;
+    width: 5px;
+    height: 5px;
+    margin: -5px 10px 0 0;
 }
 
 
@@ -373,12 +434,75 @@ select::-ms-expand {
 
 }
 
+/* ----- Screen 3 ------ */
+
+
+
+/* ----- Screen 4 ------ */
+
+.screen-4-h-box {
+    padding: 10px 0;
+}
+
+.screen-4 .main-h3 {
+    color: #F71313;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* ----- Screen 5 ------ */
+
+.screen-5 .main-h3 {
+    color: #F71313;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/*.screen-5 .article .left-col,
+.screen-5 .article .right-col {
+    vertical-align: top;
+}*/
+
+.article-txt-box .paragraph {
+    text-align: left;
+}
+
+.article-txt-box .article-img {
+    display: block;
+    float: left;
+    width: 400px;
+    height: auto;
+    margin: 10px 20px 0 0;
+}
+
+/* ----- Screen 6 ------ */
+
+.paragraph {
+    font-size: 18px;
+    line-height: 28px;
+}
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
 
 .footer-bg {
-    background: rgba(0, 0, 0, .9);
+    background: rgba(0, 0, 0, 1);
     position: relative;
     z-index: 2;
+    font-size: 0;
+    line-height: 0;
+    padding: 40px 0;
+}
+
+.footer-bg .site-h {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
 }
