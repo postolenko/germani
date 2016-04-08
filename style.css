@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+/*------------------*/
+/*-- Fonts --*/
+/*------------------*/
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/hinted-OpenSans-Light.eot");
+    src: url("fonts/hinted-OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+        url("fonts/hinted-OpenSans-Light.woff2") format("woff2"),
+        url("fonts/hinted-OpenSans-Light.woff") format("woff"),
+        url("fonts/hinted-OpenSans-Light.ttf") format("truetype"),
+        url("fonts/hinted-OpenSans-Light.svg#OpenSans-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/hinted-OpenSans-Bold.eot");
+    src: url("fonts/hinted-OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/hinted-OpenSans-Bold.woff2") format("woff2"),
+        url("fonts/hinted-OpenSans-Bold.woff") format("woff"),
+        url("fonts/hinted-OpenSans-Bold.ttf") format("truetype"),
+        url("fonts/hinted-OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: "Open Sans Condensed";
+    src: url("fonts/hinted-OpenSans-CondensedBold.eot");
+    src: url("fonts/hinted-OpenSans-CondensedBold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/hinted-OpenSans-CondensedBold.woff2") format("woff2"),
+        url("fonts/hinted-OpenSans-CondensedBold.woff") format("woff"),
+        url("fonts/hinted-OpenSans-CondensedBold.ttf") format("truetype"),
+        url("fonts/hinted-OpenSans-CondensedBold.svg#OpenSans-CondensedBold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/hinted-OpenSans.eot");
+    src: url("fonts/hinted-OpenSans.eot?#iefix") format("embedded-opentype"),
+        url("fonts/hinted-OpenSans.woff2") format("woff2"),
+        url("fonts/hinted-OpenSans.woff") format("woff"),
+        url("fonts/hinted-OpenSans.ttf") format("truetype"),
+        url("fonts/hinted-OpenSans.svg#OpenSans") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*-- Icon Fonts --*/
+
+@font-face {
+	font-family: "Glyphicons Halflings";
+	src: url("fonts/glyphicons-halflings-regular.eot");
+	src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
+		 url("fonts/glyphicons-halflings-regular.woff2") format("woff2"), 
+		 url("fonts/glyphicons-halflings-regular.woff") format("woff"), 
+		 url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), 
+		 url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+
+.glyphicon {
+	font-family: "Glyphicons Halflings";
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+
+*/
+
+
+/*-------------------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+html,
+body {
+    min-width: 100%;
+    background-color: #ffffff;
+}
+
+body {
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+}
+
+section {
+    padding: 30px 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper {
+    display: table; 
+    height: 100%;
+    min-width: 100%;
+}
+
+.wrapper:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(img/germani_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    display: table-row;
+    height: 100%;
+    min-width: 100%;
+}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+* html .clearfix             { zoom: 1; }
+*:first-child+html .clearfix { zoom: 1; }
+
+/*-------------------------------------------*/
+/* ----- DEFAULT STYLES ------ */
+/*-------------------------------------------*/
+
+h2 {
+    color: #ffffff;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.screen {
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    padding: 4% 0;
+}
+
+/*-------------------------------------------*/
+/* ----- REUSABLE COMPONENTS ------ */
+/*-------------------------------------------*/
+
+.row {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+/*-------------------------------------------*/
+/* ----- HEADER ------ */
+/*-------------------------------------------*/
+
+.header-bg {
+    background: rgba(0, 0, 0, 1);
+    font-size: 0;
+    line-height: 0;
+    padding: 5px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+
+.main-heads-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    text-align: right;
+}
+
+.main-heads {
+    float: right;
+    text-align: left;
+}
+
+.site-h {
+    color: #ffffff;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.site-h.main-h {
+    color: #FFEB00;
+}
+
+.main-h2 {
+    padding: 0;
+}
+
+/*-------------------------------------------*/
+/* ----- CONTENT ------ */
+/*-------------------------------------------*/
+
+
+.screen-1 h2 {
+    color: #FFEB00;
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 300;
+    background: rgba(0, 0, 0, .4);
+    border: 1px solid #000000;
+}
+
+.screen-1 .jumbotron {
+    padding: 40px 0;
+}
+
+.screen-1 .left-col {
+    width: 50%;
+    float: left;
+    padding: 0 1.5% 0 0;
+}
+
+.screen-1 .list {
+    color: #ffffff;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.screen-1 .list li:before {
+    display: inline-block;
+    vertical-align: top;
+    content: "*";
+    color: #FFEB00;
+    width: 5px;
+    height: 5px;
+    margin: -5px 10px 0 0;
+}
+
+.screen-1 .right-col {
+    width: 50%;
+    float: right;
+    padding: 0 0 0 1.5%;
+}
+
+.screen-1 .right-col p {
+    color: #ffffff;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
