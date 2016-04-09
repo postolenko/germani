@@ -53,6 +53,13 @@
 		width: 60%;
 	}
 
+	.screen-1 .left-col,
+	.screen-1 .right-col {
+	    width: 100%;
+	    float: none;
+	    padding: 20px 0;
+	}
+
 
 	.article-h {
 	    font-size: 28px;
@@ -93,13 +100,6 @@
 	.screen-1 h2 {
 	    font-size: 22px;
 	    line-height: 36px;
-	}
-
-	.screen-1 .left-col,
-	.screen-1 .right-col {
-	    width: 100%;
-	    float: none;
-	    padding: 20px 0;
 	}
 
 	.article {
