@@ -78,53 +78,6 @@
     font-style: normal;
 }
 
-
-
-/*-- Icon Fonts --*/
-
-@font-face {
-	font-family: "Glyphicons Halflings";
-	src: url("fonts/glyphicons-halflings-regular.eot");
-	src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
-		 url("fonts/glyphicons-halflings-regular.woff2") format("woff2"), 
-		 url("fonts/glyphicons-halflings-regular.woff") format("woff"), 
-		 url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), 
-		 url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
-}
-
-.glyphicon {
-	font-family: "Glyphicons Halflings";
-	font-style: normal;
-	font-weight: normal;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-/*
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: color;
-    -ms-transition-duration: 0.3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: color;
-    -o-transition-duration: 0.3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-
-
-*/
-
-
 /*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
@@ -220,9 +173,13 @@ h2 {
 }
 
 .screen {
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .85);
     width: 100%;
     padding: 4% 0;
+    /*border-bottom: 2px solid #000000;*/
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,.4);
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,.4);
 }
 
 .screen h2:after {
@@ -273,7 +230,7 @@ select::-ms-expand {
 .paragraph {
     color: #ffffff;
     font-family: "PT Sans", Verdana, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 30px;
     font-weight: 400;
     text-align: center;
@@ -318,6 +275,21 @@ select::-ms-expand {
     margin: -5px 10px 0 0;
 }
 
+.scroll-to-top {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    z-index: 100;
+    background: rgba(255, 0, 0, .3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%; 
+    -o-border-radius: 50%; 
+    border-radius: 50%; 
+}
 
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
@@ -338,27 +310,152 @@ select::-ms-expand {
 .logo-box {
     display: inline-block;
     vertical-align: middle;
-    width: 30%;
+    width: 15%;
+}
+
+.respmenubtn {
+    display: none;
+    max-width: 34%;
+    width: 45px;
+    height: 45px;
+    z-index: 100;
+    margin: 0 3% 0 0;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: 1px solid transparent;
+}
+
+.respmenubtn span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border: 1px solid #ffffff;
+    margin: 0 auto 5px auto;
+
+    -webkit-transition-property: border transform;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border transform;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border transform;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border transform;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.respmenubtn span:last-child {
+    margin: 0 auto;
+}
+
+.respmenubtn:hover span {
+    border: 1px solid #FFEB00;
+}
+
+.respmenubtn-active span {
+    width: 40px;
+}
+
+.respmenubtn-active span:last-child {
+    display: none;
+}
+
+.respmenubtn-active span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 8px 0 0 0;
+}
+
+.respmenubtn-active span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
 }
 
 
-.main-nav-box {
 
+
+
+.main-nav-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 55%;
 }
 
 .main-nav {
 
 }
 
-.nav-link {
+.main-nav li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 10px;
+    text-align: center;
+}
 
+.nav-link {
+    color: #ffffff;
+    font-family: "PT Sans", Verdana, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 400;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: 0.4s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: 0.4s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: 0.4s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+
+}
+
+.nav-link:link,
+.nav-link:visited {
+    /*background: rgba(255, 65, 0, 1);*/
+    color: #ffffff;
+    /*border-bottom: 1px solid #F71313;*/
+}
+
+.nav-link:hover,
+.nav-link:active {
+    /*background: rgba(255, 65, 0, 1);*/
+    color: #FFEB00;
+    /*border-bottom: 1px solid #F71313;*/
 }
 
 
 .main-heads-box {
     display: inline-block;
     vertical-align: middle;
-    width: 70%;
+    width: 30%;
     text-align: right;
 }
 
@@ -370,8 +467,8 @@ select::-ms-expand {
 .site-h {
     color: #ffffff;
     font-family: "Open Sans", Verdana, Arial, sans-serif;
-    font-size: 23px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 20px;
     font-weight: 700;
 }
 
@@ -411,7 +508,7 @@ select::-ms-expand {
 .screen-1 .list {
     color: #ffffff;
     font-family: "PT Sans", Verdana, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 36px;
     font-weight: 400;
 }
@@ -435,7 +532,7 @@ select::-ms-expand {
 .screen-1 .right-col p {
     color: #ffffff;
     font-family: "PT Sans", Verdana, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     font-weight: 400;
 }
@@ -450,7 +547,7 @@ select::-ms-expand {
 .screen-2 .paragraph {
     color: #ffffff;
     font-family: "PT Sans", Verdana, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     font-weight: 400;
     text-align: center;
@@ -460,7 +557,7 @@ select::-ms-expand {
 .list {
     color: #ffffff;
     font-family: "PT Sans", Verdana, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     font-weight: 400;
 }
@@ -489,6 +586,7 @@ select::-ms-expand {
 
 .screen-4 .main-h3 {
     color: #F71313;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-size: 22px;
     line-height: 30px;
     font-weight: 300;
@@ -496,15 +594,30 @@ select::-ms-expand {
     padding: 5px 0;
 }
 
+.video-box {
+    background: rgba(0, 0, 0, .7);
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #FFEB00;
+}
+
+.video-box iframe {
+    width: 560px;
+    height: 315px;
+}
+
 /* ----- Screen 5 ------ */
 
 .screen-5 .main-h3 {
     color: #F71313;
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-size: 22px;
     line-height: 30px;
     font-weight: 300;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px 0 30px 0;
 }
 
 /*.screen-5 .article .left-col,
@@ -526,8 +639,12 @@ select::-ms-expand {
 
 /* ----- Screen 6 ------ */
 
+.screen-7 {
+    padding: 30px 0 70px 0;
+}
+
 .paragraph {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 28px;
 }
 
@@ -542,10 +659,13 @@ select::-ms-expand {
     font-size: 0;
     line-height: 0;
     padding: 40px 0;
+    text-align: center;
 }
 
 .footer-bg .site-h {
     display: inline-block;
     vertical-align: top;
     width: 50%;
+    font-size: 20px;
+    line-height: 25px;
 }

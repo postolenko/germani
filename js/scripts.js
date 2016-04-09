@@ -22,6 +22,45 @@ $(document).ready(function() {
     // $(".right-col-footer").height($("footer .row").height());
     // $(".left-col-footer").height($("footer .row").height());
 
+    $(".respmenubtn").click(function() {
+
+        if ( $(".main-nav-box").offset().top < $(window).scrollTop() ) {
+
+            $(".respmenubtn").addClass("respmenubtn-active");
+
+            $(".main-nav-box").stop().animate({"top": 0}, 300);
+
+        } else {
+
+            $(".respmenubtn").removeClass("respmenubtn-active");
+
+            $(".main-nav-box").stop().animate({"top": -110 + "%" }, 300);
+
+        }
+
+
+    });
+
+
+
+    // Navigation scroll
+
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+
+                    $('html,body').animate({
+                        scrollTop: target.offset().top - $(".header-bg").height()
+                    }, 2000);
+                    return false;
+                }
+            }
+        });
+    });
+
 
     // Show or hide ".scroll-to-top" button
 
