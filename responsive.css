@@ -135,6 +135,10 @@
 	    text-align: center;
 	}
 
+	.video-box {
+		padding: 10px;
+	}
+
 	.video-box iframe {
 	    width: 280px;
 	    height: 160px;
