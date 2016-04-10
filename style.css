@@ -203,6 +203,10 @@ select::-ms-expand {
     color: #F71313;
 }
 
+.yellow-txt {
+    color: #FFEB00;
+}
+
 .paragraph {
     color: #ffffff;
     font-family: "PT Sans", Verdana, Arial, sans-serif;
@@ -471,7 +475,7 @@ select::-ms-expand {
 .screen-1 .list li {
     color: #ffffff;
     font-family: "PT Sans", Verdana, Arial, sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 36px;
     font-weight: 400;
 }
