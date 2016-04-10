@@ -201,10 +201,16 @@ a {
     text-decoration: none;
 }
 
-/*.screen:nth-child(2n+1) {
-    background: rgba(255, 255, 255, .8);
-}*/
 
+button:hover,
+button:active,
+a:hover,
+a:active,
+.scroll-to-top:hover,
+.scroll-to-top:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
@@ -383,6 +389,7 @@ select::-ms-expand {
     transform: rotate(-45deg);
     position: relative;
     top: -2px;
+    left: -1px;
 }
 
 
