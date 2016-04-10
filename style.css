@@ -40,17 +40,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "PT Sans";
-    src: url("fonts/PTSans-Bold.eot");
-    src: url("fonts/PTSans-Bold.eot?#iefix") format("embedded-opentype"),
-        url("fonts/PTSans-Bold.woff2") format("woff2"),
-        url("fonts/PTSans-Bold.woff") format("woff"),
-        url("fonts/PTSans-Bold.ttf") format("truetype"),
-        url("fonts/PTSans-Bold.svg#PTSans-Bold") format("svg");
-    font-weight: 700;
-    font-style: normal;
-}
 
 /*-------------------------------------------*/
 /* BASIC SETUP */
