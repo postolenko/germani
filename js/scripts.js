@@ -10,18 +10,6 @@ $(document).ready(function() {
 
     });
 
-
-    $(window).resize(function() {
-
-        // $(".right-col-footer").height($("footer .row").height());
-        // $(".left-col-footer").height($("footer .row").height());
-
-    });
-
-
-    // $(".right-col-footer").height($("footer .row").height());
-    // $(".left-col-footer").height($("footer .row").height());
-
     $(".respmenubtn").click(function() {
 
         if ( $(".main-nav-box").offset().top < $(window).scrollTop() ) {
